@@ -1,0 +1,22 @@
+/*
+ * Header Styles
+ */
+.site-header {
+  padding: 20px 0; }
+  .site-header .branding {
+    float: left; }
+    .site-header .branding .site-title {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-size: 1.1428571429em;
+      color: black; }
+    .site-header .branding .site-description {
+      font-size: 10px;
+      font-size: 0.7142857143em;
+      display: block;
+      color: #bfc1c8; }
+
+.weather_status_icon{
+  width: 56% !important; }
+.icons{
+  width: auto !important; }
