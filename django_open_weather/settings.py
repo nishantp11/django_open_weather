@@ -31,12 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    ## Django modules
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    ## Local apps
+
+    'open_weather',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +62,7 @@ ROOT_URLCONF = 'django_open_weather.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -63,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.static',
             ],
         },
     },
@@ -119,3 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Configuration for Open Weather API
+
+OPEN_WEATHER_API_KEY = '>>your API Key here <<'
+
+DEFAULT_CITIES = ['barcelona,es','delhi,in','durban','london,uk','miami','milan','paris,fr','shanghai','tokyo','toronto']
