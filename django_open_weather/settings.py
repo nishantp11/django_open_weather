@@ -131,9 +131,8 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
-
 # Configuration for Open Weather API
 
-OPEN_WEATHER_API_KEY = '>>your API Key here <<'
+OPEN_WEATHER_API_KEY = '99010a1a115f1cd17cd36321b0e0bb98'
 
 DEFAULT_CITIES = ['barcelona,es','delhi,in','durban','london,uk','miami','milan','paris,fr','shanghai','tokyo','toronto']
