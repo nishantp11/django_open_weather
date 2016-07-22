@@ -27,8 +27,6 @@ def dashboard(request):
 		except:
 			pass
 
-	print response
-
 	return render_to_response(
 			'index.html',
 			{'response':response},
