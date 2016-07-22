@@ -25,6 +25,7 @@ def dashboard(request):
 			out = client.call_API(endpoint,params)
 			response.append(json.loads(out))
 		except:
+			## Assuming no params have been sent
 			pass
 
 	return render_to_response(
